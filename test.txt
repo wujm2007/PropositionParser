@@ -1,0 +1,26 @@
+// yes
+((A_{1} \and A_{2}) \imply B)
+// no (proposition letter misspelled)
+((A{1} \and A_{2}) \imply B)
+// no (connective misspelled)
+((A_{1} \and A_{2}) \iply B)
+// yes
+((A_{1} \and A_{2}) \imply (A_{2} \and A_{1}))
+// no (\and requires 2 operands)
+((A_{1} \and) \imply (A_{2} \and A_{1}))
+// no (\and requires 2 operands)
+((\and A_{1}) \imply (A_{2} \and A_{1}))
+// yes
+((\not A_{1}) \imply (A_{2} \and A_{1}))
+// no (right parentheses missing)
+((A_{1} \and A_{2}) \imply B
+// no (left parentheses missing)
+(A_{1} \and A_{2}) \imply B)
+// yes
+((A_{1} \or A_{2}) \imply B)
+// no (connective shoudn't be upper case)
+((A_{1} \OR A_{2}) \imply B)
+// yes (just very long)
+((((A_{1} \and (A_{2} \or (A_{3} \eq ((A_{1} \and (A_{2} \or (A_{3} \eq A_{4}))) \imply ((\not B_{1}) \or (B_{2} \eq (B_{3} \and B_{4}))))))) \imply ((\not B_{1}) \or (B_{2} \eq (B_{3} \and ((A_{1} \and (A_{2} \or (A_{3} \eq ((A_{1} \and (A_{2} \or (A_{3} \eq A_{4}))) \imply ((\not B_{1}) \or (B_{2} \eq (B_{3} \and B_{4}))))))) \imply ((\not B_{1}) \or (B_{2} \eq (B_{3} \and B_{4})))))))) \eq ((A_{1} \and (A_{2} \or (A_{3} \eq ((A_{1} \and (A_{2} \or (A_{3} \eq A_{4}))) \imply ((\not B_{1}) \or (B_{2} \eq (B_{3} \and B_{4}))))))) \imply ((\not B_{1}) \or (B_{2} \eq (B_{3} \and ((A_{1} \and (A_{2} \or (A_{3} \eq ((A_{1} \and (A_{2} \or (A_{3} \eq A_{4}))) \imply ((\not B_{1}) \or (B_{2} \eq (B_{3} \and B_{4}))))))) \imply ((\not B_{1}) \or (B_{2} \eq (B_{3} \and B_{4}))))))))) \imply (\not (((A_{1} \and (A_{2} \or (A_{3} \eq ((A_{1} \and (A_{2} \or (A_{3} \eq A_{4}))) \imply ((\not B_{1}) \or (B_{2} \eq (B_{3} \and B_{4}))))))) \imply ((\not B_{1}) \or (B_{2} \eq (B_{3} \and ((A_{1} \and (A_{2} \or (A_{3} \eq ((A_{1} \and (A_{2} \or (A_{3} \eq A_{4}))) \imply ((\not B_{1}) \or (B_{2} \eq (B_{3} \and B_{4}))))))) \imply ((\not B_{1}) \or (B_{2} \eq (B_{3} \and B_{4})))))))) \eq ((A_{1} \and (A_{2} \or (A_{3} \eq ((A_{1} \and (A_{2} \or (A_{3} \eq A_{4}))) \imply ((\not B_{1}) \or (B_{2} \eq (B_{3} \and B_{4}))))))) \imply ((\not B_{1}) \or (B_{2} \eq (B_{3} \and ((A_{1} \and (A_{2} \or (A_{3} \eq ((A_{1} \and (A_{2} \or (A_{3} \eq A_{4}))) \imply ((\not B_{1}) \or (B_{2} \eq (B_{3} \and B_{4}))))))) \imply ((\not B_{1}) \or (B_{2} \eq (B_{3} \and B_{4})))))))))))
+// yes
+(A_{1} \imply (A_{2} \imply (A_{3} \imply (A_{4} \imply (A_{5} \imply (A_{6} \imply (A_{7} \imply (A_{8} \imply (A_{9} \imply (A_{10} \imply (A_{11} \imply (A_{12} \imply (A_{13} \imply (A_{14} \imply (A_{15} \imply (A_{15} \imply (A_{16} \imply (A_{17} \imply (A_{18} \imply (A_{19} \imply A_{20}))))))))))))))))))))
